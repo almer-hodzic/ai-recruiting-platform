@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Recruiting.Application.DTOs;
 using Recruiting.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace Recruiting.Api.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
